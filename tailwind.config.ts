@@ -57,8 +57,9 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Orbitron', 'sans-serif'],
-        body: ['Montserrat', 'sans-serif'],
+        heading: ['Russo One', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        logo: ['Black Ops One', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",

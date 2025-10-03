@@ -27,7 +27,7 @@ const Navigation = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const navLinks = ["Home", "Features", "Characters", "Gallery", "Rules"];
+  const navLinks = ["Home", "Features", "Characters", "About", "Tutorial", "Gallery"];
 
   return (
     <nav
@@ -38,7 +38,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-8">
-            <h1 className="text-3xl font-heading glow-primary">ETERNAL</h1>
+            <h1 className="text-3xl font-logo glow-primary">ETERNAL</h1>
             
             <div className="hidden md:flex items-center space-x-6">
               {navLinks.map((link) => (
@@ -75,6 +75,13 @@ const Navigation = () => {
               ) : (
                 <Copy className="ml-2 h-4 w-4 group-hover:text-accent transition-colors" />
               )}
+            </Button>
+
+            <Button
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading shadow-[0_0_20px_rgba(159,90,253,0.4)] hover:shadow-[0_0_30px_rgba(159,90,253,0.6)] transition-all"
+            >
+              DASHBOARD
             </Button>
           </div>
 

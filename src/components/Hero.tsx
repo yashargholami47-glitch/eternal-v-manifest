@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-new.jpg";
 
 const Hero = () => {
   return (
@@ -20,23 +20,23 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="space-y-6 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-heading glow-primary tracking-wider">
+        <div className="space-y-6 animate-bounce-in">
+          <h1 className="text-7xl md:text-9xl font-logo glow-primary tracking-widest animate-glow-pulse">
             ETERNAL
           </h1>
           
-          <p className="text-2xl md:text-4xl font-heading text-accent glow-accent">
+          <p className="text-2xl md:text-4xl font-heading text-accent glow-accent animate-slide-up">
             YOUR STORY BEGINS IN LOS SANTOS
           </p>
 
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Experience the most immersive GTA V Roleplay server. Build your empire, forge alliances, and create your legacy in the city that never sleeps.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 animate-zoom-in" style={{ animationDelay: "0.4s" }}>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading text-lg px-8 py-6 shadow-[0_0_30px_rgba(159,90,253,0.5)] hover:shadow-[0_0_40px_rgba(159,90,253,0.7)] transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading text-lg px-8 py-6 shadow-[0_0_30px_rgba(159,90,253,0.5)] hover:shadow-[0_0_40px_rgba(159,90,253,0.7)] transition-all hover:scale-110"
             >
               JOIN NOW
             </Button>
@@ -44,7 +44,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="glass hover:bg-accent/20 border-accent text-accent font-heading text-lg px-8 py-6"
+              className="glass hover:bg-accent/20 border-accent text-accent font-heading text-lg px-8 py-6 hover:scale-110 transition-all"
             >
               LEARN MORE
             </Button>
